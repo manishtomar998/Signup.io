@@ -10,54 +10,54 @@
 <body>
     <div id="form">
         <div id="first">
-            <form >
+            <form onsubmit="submission(event)">
                 <div>
                     <label for="fullName">
                         Full name :
                     </label>
-                    <input type="text" class="inputFields" id="fullName" placeholder="Please enter">
+                    <input required type="text" class="inputFields" id="fullName" placeholder="Please enter">
                 </div>
                 <div id="gender1">
                     <label for="gender">
                         Gender :
                     </label>
                     <div>
-                        <input id="gender" type="radio" name="gender" value="male" />Male
-                        <input id="gender" type="radio" name="gender" value="female" />Female
+                        <input required type="radio" name="gender" value="male" />Male
+                        <input required type="radio" name="gender" value="female" />Female
                     </div>
                 </div>
                 <div>
                     <label for="email">
                         Email :
                     </label>
-                    <input id="email" class="inputFields" type="email" placeholder="Email" />
+                    <input required id="email" class="inputFields" type="email" placeholder="abc@xyz.com" />
                 </div>
                 <div>
                     <label for="phoneNumber">
                         Phone Number :
                     </label>
-                    <input id="phoneNumber" class="inputFields" type="number" placeholder="eg. 9876543210" />
+                    <input required id="phoneNumber" class="inputFields" type="number" placeholder="eg. 9876543210" />
                 </div>
                 <div>
                     <label for="username">
                         Username :
                     </label>
-                    <input id="username" class="inputFields" type="text" placeholder="" />
+                    <input required id="username" class="inputFields" type="text" placeholder="username" />
                 </div>
                 <div>
                     <label for="password">
                         Password :
                     </label>
-                    <input id="password" class="inputFields" type="password" placeholder="******" />
+                    <input required id="password" class="inputFields" type="password" placeholder="******" />
                     <div>
                         <label for="cnfmPassword">
                             Confirm password :
                         </label>
-                        <input class="inputFields" id="cnfmPassword" type="password" placeholder="******" />
+                        <input required class="inputFields" id="cnfmPassword" type="password" placeholder="******" />
                     </div>
                 </div>
                 <div id="btnSub">
-                    <button id="submitBtn">
+                    <button type="submit" id="submitBtn">
                         Submit
                     </button>
                 </div>
