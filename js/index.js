@@ -8,20 +8,29 @@ function submission(event) {
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("cnfmPassword").value;
     phoneNumberCheck(phoneNumber);
-    passwordCheck(password,confirmPassword);
+    passwordCheck(password, confirmPassword);
+    alert("Form submitted");
 }
- function phoneNumberCheck(number){
-     if(number.length<10){
-         alert("less than 10 digit");
-         return false;
-     }
- }
+function phoneNumberCheck(number) {
+    if (number.length < 10) {
+        document.getElementById("numValid").style.display = "block";
+        return false;
+    }
+}
 
 
- function passwordCheck(password,confirmPassword){
-     if(password!==confirmPassword){
-         alert("password is not same");
-         return false;
-     }
+function passwordCheck(password, confirmPassword) {
+    if (password !== confirmPassword) {
+        document.getElementById("passValid").style.display = "block";
+        return false;
+    }
 
- }
+}
+
+function passValueEnter() {
+    document.getElementById("passValid").style.display = "none";
+}
+
+function numValueEnter() {
+    document.getElementById("numValid").style.display = "none";
+}

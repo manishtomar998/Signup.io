@@ -15,6 +15,23 @@ body{
     margin-top: 2%;
 }
 
+#heading{
+    text-decoration: underline;
+    color: purple;
+}
+
+input{
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+}
+
+.validation{
+    display: none;
+    color: red;
+    margin: 0;
+}
+
 label{
     display: flex;
     flex-direction: row;
@@ -29,7 +46,7 @@ label{
     justify-content: center;
 }
 .inputFields{
-    margin: 10px;
+    margin: 5px;
     font-size: large;
 
 }
