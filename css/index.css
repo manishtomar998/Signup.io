@@ -2,3 +2,10 @@ body{
     padding: 0;
     margin: 0;
 }
+fieldset{
+    width: fit-content;
+}
+#form{
+    justify-content: center;
+    flex: ;
+}
