@@ -7,6 +7,21 @@ function submission(event) {
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
     let confirmPassword = document.getElementById("cnfmPassword").value;
-    console.log(fullName, gender, email, phoneNumber, username, password, confirmPassword);
-
+    phoneNumberCheck(phoneNumber);
+    passwordCheck(password,confirmPassword);
 }
+ function phoneNumberCheck(number){
+     if(number.length<10){
+         alert("less than 10 digit");
+         return false;
+     }
+ }
+
+
+ function passwordCheck(password,confirmPassword){
+     if(password!==confirmPassword){
+         alert("password is not same");
+         return false;
+     }
+
+ }
