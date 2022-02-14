@@ -9,18 +9,17 @@
 
 <body>
     <div id="form">
-        <fieldset>
-        <form>
-            <div>
+        <div id="first">
+            <form >
                 <div>
                     <label for="fullName">
-                        Full name
+                        Full name :
                     </label>
-                    <input type="text" id="fullName" placeholder="Please enter">
+                    <input type="text" class="inputFields" id="fullName" placeholder="Please enter">
                 </div>
-                <div>
+                <div id="gender1">
                     <label for="gender">
-                        Gender
+                        Gender :
                     </label>
                     <div>
                         <input id="gender" type="radio" name="gender" value="male" />Male
@@ -29,41 +28,41 @@
                 </div>
                 <div>
                     <label for="email">
-                        Email
+                        Email :
                     </label>
-                    <input id="email" type="email" placeholder="email" />
+                    <input id="email" class="inputFields" type="email" placeholder="Email" />
                 </div>
                 <div>
                     <label for="phoneNumber">
-                        Phone Number
+                        Phone Number :
                     </label>
-                    <input id="phoneNumber" type="number" placeholder="9876543210" />
+                    <input id="phoneNumber" class="inputFields" type="number" placeholder="eg. 9876543210" />
                 </div>
                 <div>
                     <label for="username">
-                        Username
+                        Username :
                     </label>
-                    <input id="username" type="text" placeholder="" />
+                    <input id="username" class="inputFields" type="text" placeholder="" />
                 </div>
                 <div>
                     <label for="password">
-                        Password
+                        Password :
                     </label>
-                    <input id="password" type="password" placeholder="******" />
+                    <input id="password" class="inputFields" type="password" placeholder="******" />
                     <div>
                         <label for="cnfmPassword">
-                            Confirm password
+                            Confirm password :
                         </label>
-                        <input id="cnfmPassword" type="password" placeholder="******" />
+                        <input class="inputFields" id="cnfmPassword" type="password" placeholder="******" />
                     </div>
                 </div>
-                <div>
-
+                <div id="btnSub">
+                    <button id="submitBtn">
+                        Submit
+                    </button>
                 </div>
-            </div>
-
-        </form>
-    </fieldset>
+            </form>
+        </div>
     </div>
 
     <script src="/js/index.js"></script>

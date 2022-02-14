@@ -1,11 +1,49 @@
 body{
     padding: 0;
     margin: 0;
+    background-color: grey;
 }
-fieldset{
+#first{
+    flex-wrap: wrap;
+    padding: 2% 5% 0 5%;
     width: fit-content;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: rgb(217, 241, 250);
+    margin: 5px;
+    font-size: larger;
+    margin-top: 2%;
+}
+
+label{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    line-height: 26px;
+
 }
 #form{
+    width: 100%;
+    display:flex;
     justify-content: center;
-    flex: ;
+}
+.inputFields{
+    margin: 10px;
+    font-size: large;
+
+}
+#gender1{
+    display: inline;
+}
+#submitBtn{
+    background-color:rgb(38, 224, 38);
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    margin: 5px ;
+    padding: 10px;
+}
+#btnSub{
+    text-align:center ;
 }
